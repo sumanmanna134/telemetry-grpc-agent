@@ -1,0 +1,75 @@
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.system";
+option java_outer_classname = "SystemProto";
+
+service SystemService {
+  rpc StreamSystemInfo(Empty) returns (stream SystemMetrics);
+}
+
+message Empty {}
+
+message NetworkInterfaceInfo {
+  string name = 1;
+  string ipv4 = 2;
+  string ipv6 = 3;
+  string macAddress = 4;
+  string speed = 5;
+  string status = 6;
+  string bytesSent = 7;
+  string bytesRecv = 8;
+}
+
+message SystemMetrics {
+  string cpuUsage = 1;
+  int32 logicalCpuCount = 2;
+  int32 physicalCpuCount = 3;
+
+  string memoryUsed = 4;
+  string memoryAvailable = 5;
+  string memoryTotal = 6;
+
+  string diskUsed = 7;
+  string diskFree = 8;
+  string diskTotal = 9;
+
+  string osName = 10;
+  string osVersion = 11;
+  string osArch = 12;
+
+  string jvmUptime = 13;
+  int32 jvmThreadCount = 14;
+
+  string timestamp = 15;
+  string cpuModel = 16;
+  string cpuFreq = 17;
+  string motherboard = 18;
+  string firmware = 19;
+  string serialNumber = 20;
+
+  string ipv4 = 21;
+  string ipv6 = 22;
+  string macAddress = 23;
+  string hostname = 24;
+
+  repeated string perCoreCpuLoad = 25;
+  string jvmHeapUsed = 26;
+  string jvmHeapMax = 27;
+  int32 gcCount = 28;
+  int64 gcTime = 29;
+
+  string networkBytesSent = 30;
+  string networkBytesRecv = 31;
+  string loggedInUser = 32;
+  string systemBootTime = 33;
+
+  repeated NetworkInterfaceInfo networkInterfaces = 40;
+  string defaultGateway = 41;
+  repeated string dnsServers = 42;
+  repeated string activeConnections = 43;
+}
+
+// Note: SystemServiceImpl.java is updated accordingly with all advanced network features.
+// For brevity, the implementation details are omitted here but match the merged advanced code provided earlier.
