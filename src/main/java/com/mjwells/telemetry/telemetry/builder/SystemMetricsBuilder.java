@@ -1,4 +1,4 @@
-package com.mjwells.telemetry.telemetry.strategy;
+package com.mjwells.telemetry.telemetry.builder;
 
 import com.example.grpc.system.SystemMetrics;
 

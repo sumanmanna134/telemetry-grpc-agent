@@ -1,12 +1,14 @@
-package com.mjwells.telemetry.telemetry.strategy.collector;
+package com.mjwells.telemetry.telemetry.service.metrics;
 
 import com.mjwells.telemetry.telemetry.strategy.MetricCollector;
-import com.mjwells.telemetry.telemetry.strategy.SystemMetricsBuilder;
+import com.mjwells.telemetry.telemetry.builder.SystemMetricsBuilder;
+import org.springframework.stereotype.Component;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 
 import java.util.Arrays;
 
+@Component
 public class CpuMetricCollector implements MetricCollector {
     private final CentralProcessor processor = new SystemInfo().getHardware().getProcessor();
 

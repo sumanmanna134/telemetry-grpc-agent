@@ -65,6 +65,81 @@ A production-grade, modular telemetry agent for streaming real-time system metri
 
 [//]: # (```)
 
+## Sample Stream Response
+```
+{
+    "perCoreCpuLoad": [
+        "25.96%",
+        "23.29%",
+        "21.29%",
+        "18.64%",
+        "22.09%",
+        "11.42%",
+        "7.00%",
+        "4.99%"
+    ],
+    "networkInterfaces": [],
+    "dnsServers": [
+        "2409:40e1:11af:2405:9ed4:a6ff:fe5a:9f3d",
+        "192.168.31.1"
+    ],
+    "activeConnections": [
+        "tcp6       0      0  2409:40e1:11af:2.62499 2606:4700:7::a29.443   ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.6565         127.0.0.1.62498        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62498        127.0.0.1.6565         ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.59361        127.0.0.1.62496        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62496        127.0.0.1.59361        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62494        127.0.0.1.62495        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62495        127.0.0.1.62494        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62012        127.0.0.1.62490        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62490        127.0.0.1.62012        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62012        127.0.0.1.62476        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62476        127.0.0.1.62012        ESTABLISHED",
+        "tcp4       0      0  192.168.31.201.62046   140.82.113.25.443      ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.24265        127.0.0.1.62014        ESTABLISHED",
+        "tcp4       0      0  127.0.0.1.62014        127.0.0.1.24265        ESTABLISHED",
+        "tcp6       0      0  2409:40e1:11af:2.61221 2606:4700:3030::.443   ESTABLISHED",
+        "tcp4       0      0  192.168.31.201.61219   35.165.165.7.443       ESTABLISHED",
+        "tcp4       0      0  192.168.31.201.61213   13.234.246.132.443     ESTABLISHED",
+        "tcp4       0      0  192.168.31.201.61208   35.174.127.31.443      ESTABLISHED",
+        "tcp6       0      0  fe80::18ee:4f8:5.61201 fe80::801:4af8:a.58884 ESTABLISHED",
+        "tcp6       0      0  2409:40e1:11af:2.61203 2404:6800:4003:c.5228  ESTABLISHED"
+    ],
+    "cpuUsage": "16.82%",
+    "logicalCpuCount": 8,
+    "physicalCpuCount": 8,
+    "memoryUsed": "6.52 GB",
+    "memoryAvailable": "1.48 GB",
+    "memoryTotal": "8.00 GB",
+    "diskUsed": "219.48 GB",
+    "diskFree": "8.79 GB",
+    "diskTotal": "228.27 GB",
+    "osName": "macOS",
+    "osVersion": "15.5",
+    "osArch": "aarch64",
+    "jvmUptime": "23217 ms",
+    "jvmThreadCount": 19,
+    "timestamp": "2025-07-13T16:03:43.878319",
+    "cpuModel": "Apple M1\n 1 physical CPU package(s)\n 8 physical CPU core(s) (4 performance + 4 efficiency)\n 8 logical CPU(s)\nIdentifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0\nProcessorID: 0100000c1b588bb3\nMicroarchitecture: ARM64 SoC: Firestorm + Icestorm",
+    "cpuFreq": "3.20 GHz",
+    "motherboard": "MGN63",
+    "firmware": "J313",
+    "serialNumber": "C02G5D7VQ6L4",
+    "ipv4": "",
+    "ipv6": "feXX:0:0:0:20XX:Xdff:XeeX:XaXX",
+    "macAddress": "XXXXXX",
+    "hostname": "MacBookAir.lan",
+    "jvmHeapUsed": "0.04 GB",
+    "jvmHeapMax": "2.00 GB",
+    "gcCount": 6,
+    "gcTime": "18",
+    "networkBytesSent": "0.00 GB",
+    "networkBytesRecv": "0.00 GB",
+    "loggedInUser": "sumanmanna",
+    "systemBootTime": "2025-07-08T09:02:00",
+    "defaultGateway": "192.168.31.1"
+}
+```
 ## 🛠️ Getting Started
 
 ### Prerequisites

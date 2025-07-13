@@ -1,11 +1,13 @@
-package com.mjwells.telemetry.telemetry.strategy.collector;
+package com.mjwells.telemetry.telemetry.service.metrics;
 
 import com.mjwells.telemetry.telemetry.strategy.MetricCollector;
-import com.mjwells.telemetry.telemetry.strategy.SystemMetricsBuilder;
+import com.mjwells.telemetry.telemetry.builder.SystemMetricsBuilder;
+import org.springframework.stereotype.Component;
 import oshi.SystemInfo;
 import oshi.software.os.FileSystem;
 import oshi.software.os.OSFileStore;
 
+@Component
 public class DiskMetricCollector implements MetricCollector {
     private final FileSystem fs = new SystemInfo().getOperatingSystem().getFileSystem();
 
